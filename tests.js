@@ -39,4 +39,7 @@ describe('sayHello', function () {
     it('should return the string "Hello, Jane!"', function () {
         expect(sayHello()).toBe('Hello, Jane!');
     });
+    it('should return the string "Hello, Alex!" when passed an argument', function () {
+        expect(sayHello("Alex")).toBe('Hello, Alex!');
+    });
 });
