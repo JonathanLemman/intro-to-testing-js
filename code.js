@@ -11,9 +11,5 @@ function sum(a, b) {
 }
 // testing
 function sayHello() {
-<<<<<<< HEAD
-
-=======
     return "";
->>>>>>> jonathan-lemman
 }
