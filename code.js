@@ -10,6 +10,10 @@ function sum(a, b) {
     return a + b;
 }
 // testing
-function sayHello() {
-    return "";
+function sayHello(input) {
+    if(input === undefined || typeof input === "boolean") {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
