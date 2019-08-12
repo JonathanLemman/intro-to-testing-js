@@ -11,5 +11,5 @@ function sum(a, b) {
 }
 // testing
 function sayHello() {
-    return "";
+    return "Hello, Jane!";
 }
