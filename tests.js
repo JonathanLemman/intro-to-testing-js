@@ -14,21 +14,6 @@ describe('helloWorld', function() {
     });
 });
 
-describe('sum', function() {
-    it('should be a defined function', function() {
-        expect(typeof sum).toBe('function');
-    });
-    it('should return the number 4 when passed the numbers 2 and 2', function () {
-        expect(sum(2,2)).toBe(4);
-    });
-    it('should return the number 5 when passed the numbers 2 and 3', function () {
-        expect(sum(2,3)).toBe(5);
-    });
-    it('should return false when passed two strings', function () {
-        expect(sum('black','sheep')).toBe(false);
-    });
-});
-
 describe('sayHello', function () {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
@@ -44,5 +29,30 @@ describe('sayHello', function () {
     });
     it('should return the string "Hello, Pat!" when passed an argument', function () {
         expect(sayHello("Pat")).toBe('Hello, Pat!');
+    });
+    it('should return the string "Hello, World!"', function () {
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when passed true', function () {
+        expect(sayHello(true)).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when passed false', function () {
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
+});
+
+// Test We Did In Class
+describe('sum', function() {
+    it('should be a defined function', function() {
+        expect(typeof sum).toBe('function');
+    });
+    it('should return the number 4 when passed the numbers 2 and 2', function () {
+        expect(sum(2,2)).toBe(4);
+    });
+    it('should return the number 5 when passed the numbers 2 and 3', function () {
+        expect(sum(2,3)).toBe(5);
+    });
+    it('should return false when passed two strings', function () {
+        expect(sum('black','sheep')).toBe(false);
     });
 });
